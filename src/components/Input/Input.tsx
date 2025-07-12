@@ -97,7 +97,9 @@ export const Input = ({
           )
         ))}
       <TextInput
-        multiline
+        multiline={false}
+        returnKeyType="send"
+        onSubmitEditing={handleSend}
         placeholder={l10n.inputPlaceholder}
         placeholderTextColor={`${String(theme.colors.inputText)}80`}
         underlineColorAndroid='transparent'
